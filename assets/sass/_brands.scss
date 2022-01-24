@@ -1,0 +1,23 @@
+.brand {
+  padding: 100px 0 var(--section-spacing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 33px 0;
+  &-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: #696984;
+  }
+  &-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 38px 76px;
+    flex-wrap: wrap;
+  }
+}

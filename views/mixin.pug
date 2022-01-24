@@ -1,0 +1,17 @@
+mixin menuItem(name, href)
+  li.menu-item 
+    a.menu-link(href= href)= name
+
+mixin serviceItem(imgSrc, heading, text)
+  article.service-item
+    img(src= imgSrc, alt= heading)
+    h4.service-item-heading= heading 
+    p.service-item-text= text
+
+mixin aboutItem(imgSrc, name, text, href)
+  article.about-item
+    img(srcset= imgSrc, alt= name)
+    h4.about-item-heading= name
+    a(href= href) 
+      button.btn.about-item-btn= text
+

@@ -1,0 +1,23 @@
+header.header 
+  .header-container 
+    nav.nav 
+      a.logo
+        .logo-shape 
+        h1.logo-text.global-heading.global-heading--700 Skilline
+      include menu
+      .header-auth 
+        button.btn.btn--secondary.header-login Login
+        button.btn.btn--primary.header-signup Sign Up
+    .header-main 
+      .header-content
+        h2.header-heading
+          span.primary-color Studying 
+          span Online is now much easier
+        p.header-text Skilline is an interesting platform that will teach you in more an interactive way
+        .header-action
+          button.btn.btn--primary.header-join Join for free
+          button.btn.btn--secondary.header-play 
+            img(src="./assets/img/header-play.svg", alt="play button")
+          a.header-watch(href="#") Watch how it works
+      .header-img 
+        img(srcset="./assets/img/header-img.png 2x", alt="header image")
