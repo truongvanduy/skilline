@@ -1,9 +1,7 @@
 header.header 
   .header-container 
     nav.nav 
-      a.logo
-        .logo-shape 
-        h1.logo-text.global-heading.global-heading--700 Skilline
+      +logo("filled")
       include menu
       .header-auth 
         button.btn.btn--secondary.header-login Login

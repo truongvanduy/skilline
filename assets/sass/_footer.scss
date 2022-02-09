@@ -1,0 +1,115 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: $footer-color;
+  background-color: $footer-background;
+  width: 100%;
+  padding-top: 64px;
+  padding-bottom: 50px;
+  &-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 388px;
+    $logo-height: 83px;
+    height: $logo-height;
+    margin-bottom: 95px;
+    &-line {
+      width: 1px;
+      height: 100%;
+      background-color: $footer-line-background;
+    }
+    &-title {
+      max-width: 156px;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 33px;
+      letter-spacing: 0.04em;
+      color: #ffffff;
+    }
+  }
+  &-subscribe {
+    &-heading {
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 39px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+    &-input {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      height: 60px;
+      width: 600px;
+      align-items: stretch;
+      margin-bottom: 96px;
+      & input {
+        border-radius: 100rem;
+        display: block;
+        width: 100%;
+        max-width: 400px;
+        padding: 15px 30px;
+        background-color: transparent;
+        border: 1px solid #83839a;
+        outline: none;
+        &,
+        &::placeholder {
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: 0.04em;
+          color: #83839a;
+        }
+      }
+    }
+    &-btn {
+      background: linear-gradient(105.5deg, #545ae7 19.57%, #393fcf 78.85%);
+      width: 100%;
+      max-width: 180px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 1.5;
+      color: #ffffff;
+    }
+  }
+  &-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-link {
+    margin-bottom: 20px;
+    &,
+    .footer-right {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      line-height: 33px;
+      text-align: center;
+      letter-spacing: 0.04em;
+      padding-left: 20px;
+      padding-right: 20px;
+      display: inline-block;
+    }
+    & + & {
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 17px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $footer-line-background;
+      }
+    }
+  }
+}

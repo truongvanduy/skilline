@@ -93,7 +93,16 @@
     width: 60px;
     height: 60px;
     border-radius: 6px;
-    background-color: $logo-shape-color;
+    &.filled {
+      background-color: $logo-shape-color;
+    }
+    &.bordered {
+      background-color: transparent;
+      border: 2px solid $logo-shape-color;
+      & ~ .logo-text {
+        color: #fff;
+      }
+    }
   }
   &-text {
     position: absolute;

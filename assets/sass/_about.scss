@@ -4,7 +4,6 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-bottom: var(--section-spacing);
   &-heading {
     @include heading(44px, 600, 1.8);
     margin-bottom: 20px;
@@ -34,7 +33,7 @@
       }
     }
     & img {
-      opacity: 0.5;
+      opacity: 0.6;
     }
     & > *:not(:first-child) {
       position: absolute;

@@ -1,0 +1,11 @@
+.integration {
+  &-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: auto;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  @include nunitoContent(1457px, 688px, 36px, 1.6, 24px);
+}

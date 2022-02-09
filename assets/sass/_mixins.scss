@@ -4,9 +4,90 @@
   line-height: $line-height;
   color: $heading-color;
 }
+@mixin featureHeading() {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 160%;
+  color: $heading-color;
+}
 @mixin text($font-size, $font-weight, $line-height) {
   font-size: $font-size;
   font-weight: $font-weight;
   line-height: $line-height;
   color: $text-color;
+}
+@mixin circle($size, $color) {
+  width: $size;
+  height: $size;
+  border-radius: 100rem;
+  position: absolute;
+  background-color: $color;
+}
+
+@mixin featureArticle($containerWidth, $contentWidth, $contentPaddingTop) {
+  display: flex;
+  width: 100%;
+  max-width: $containerWidth;
+  justify-content: space-between;
+  align-items: flex-start;
+  &-content {
+    padding-top: $contentPaddingTop;
+    width: 100%;
+    max-width: $contentWidth;
+  }
+  &-heading {
+    @include featureHeading;
+    margin-bottom: 20px;
+  }
+}
+
+@mixin nunitoContent(
+  $sectionWidth,
+  $contentWidth,
+  $headingSize,
+  $headingHeight,
+  $textSize
+) {
+  width: $sectionWidth;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  &-content {
+    width: 100%;
+    max-width: $contentWidth;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  &-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    letter-spacing: 0.2em;
+    color: #525596;
+    position: relative;
+    padding-left: 110px;
+    margin-bottom: 33px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      width: 80px;
+      height: 1px;
+      background-color: currentColor;
+    }
+  }
+  &-heading {
+    @include heading($headingSize, 600, $headingHeight);
+    margin-bottom: 30px;
+  }
+  &-text {
+    @include text($textSize, 400, 1.8);
+    margin-bottom: 44px;
+  }
 }

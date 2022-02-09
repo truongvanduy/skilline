@@ -1,0 +1,16 @@
+footer.footer 
+  .footer-logo 
+    +logo("bordered")
+    .footer-logo-line
+    .footer-logo-title Virtual Class for Zoom
+  form(action="#").footer-subscribe
+    label(for="subscribe-email") 
+      h3.footer-subscribe-heading Subscribe to get our Newsletter
+    .footer-subscribe-input
+      input#subscribe-email(type="email", name="email", placeholder="Your Email")
+      button.btn.footer-subscribe-btn(type="submit") Subscribe 
+  .footer-nav 
+    a.footer-link(href="#") Careers
+    a.footer-link(href="#") Privacy Policy
+    a.footer-link(href="#") Terms & Conditions
+  .footer-right © 2021 Class Technologies Inc. 

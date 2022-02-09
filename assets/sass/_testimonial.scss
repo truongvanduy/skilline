@@ -1,0 +1,114 @@
+.testimonial {
+  @include nunitoContent(1520px, 607px, 60px, calc(81.84 / 60), 26px);
+  gap: 0 158px;
+  padding-bottom: 122px;
+  &-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    padding-left: 38px;
+    &-circle {
+      margin-left: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      height: 80px;
+      border-radius: 100rem;
+      border: 1px solid #f48c06;
+      background-color: #fff;
+      transform: translateX(1px);
+    }
+  }
+  &-img {
+    flex: 1;
+    position: relative;
+    &-btn {
+      position: absolute;
+      top: 288px;
+      left: 538px;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ffffff;
+      box-shadow: 0px 4px 60px rgba(41, 44, 124, 0.15);
+    }
+  }
+  &-review {
+    position: absolute;
+    right: 0;
+    top: 492px;
+    background: #ffffff;
+    box-shadow: 2px 4px 60px rgba(41, 44, 124, 0.1);
+    border-radius: 20px;
+    width: 100%;
+    height: 329px;
+    max-height: fit-content;
+    min-height: fit-content;
+    max-width: 680px;
+    display: flex;
+    justify-content: flex-start;
+    &-left-bar {
+      height: 100%;
+      width: 14px;
+      background: #f77766;
+      box-shadow: 2px 4px 60px rgba(41, 44, 124, 0.1);
+      border-radius: 20px 0px 0px 20px;
+    }
+    &-main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      padding: 41px 59px 0 73px;
+      letter-spacing: 0.02em;
+    }
+    &-comment {
+      position: relative;
+      @include text(22px, 400, 1.8);
+      &::before {
+        position: absolute;
+        content: "";
+        height: 139px;
+        width: 1px;
+        border: 1px solid #bdbdd1;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -32px;
+      }
+    }
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 1;
+    }
+    &-user-name {
+      @include text(24px, 600, 1.8);
+      color: #5f5f7e;
+    }
+    &-rank {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 12px;
+    }
+    &-stars {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0 4.28px;
+    }
+    &-desc {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 180%;
+      letter-spacing: 0.02em;
+      color: #80819a;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+&-tool {
+  @include featureArticle(1440px, 570px, 189px);
+  &-heading {
+    width: 100%;
+    max-width: 393px;
+  }
+  &-img img {
+    transform: translateX(50px);
+  }
+}

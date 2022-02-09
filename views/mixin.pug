@@ -1,3 +1,8 @@
+mixin logo(type)
+  a.logo
+    .logo-shape(class= type) 
+    h1.logo-text.global-heading.global-heading--700 Skilline
+
 mixin menuItem(name, href)
   li.menu-item 
     a.menu-link(href= href)= name
@@ -15,3 +20,17 @@ mixin aboutItem(imgSrc, name, text, href)
     a(href= href) 
       button.btn.about-item-btn= text
 
+mixin featureUIItem(imgSrc, text)
+  li.feature-ui-item
+    .feature-ui-item-img 
+      img(src= imgSrc, alt="")
+    p.feature-ui-item-text= text
+
+mixin newsItem(newsType, imgSrc, title, desc)
+  .news-item
+    .news-item-img
+      img(srcset= imgSrc, alt="")
+      span.news-type.news-type--side= newsType
+    .news-item-content
+      h5.news-item-title= title
+      p.news-item-desc= desc

@@ -1,0 +1,7 @@
+&-discuss {
+  @include featureArticle(1486px, 540px, 116px);
+  &-heading {
+    width: 100%;
+    max-width: 274px;
+  }
+}

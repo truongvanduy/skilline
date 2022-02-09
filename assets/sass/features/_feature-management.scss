@@ -1,0 +1,10 @@
+&-management {
+  @include featureArticle(1545px, 646px, 152.72px);
+  &-heading {
+    max-width: 421px;
+    width: 100%;
+  }
+  &-img img {
+    transform: translateX(50px);
+  }
+}
